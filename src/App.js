@@ -1,9 +1,10 @@
 import './App.css';
 import axios from "axios";
 import React, { useEffect, useState } from 'react';
+import {useNavigate} from 'react-router-dom';
 
 function App() {
-  
+  const navigate = useNavigate();
   const [lista, setLista] = useState([{}]);
   const [ocultar, setOcultar] = useState(false);
     const [pokemon, setPokemon] = useState({});
@@ -17,6 +18,7 @@ function App() {
    },[]);
   const obtInf =async (id) =>{
     console.log(id)
+    navigate(`/pokemon/${id}`);
     const data= await axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`)
     setPokemon(data.data)
     console.log(data.data)
@@ -42,12 +44,7 @@ function App() {
    </div>
         ))}
       </ul> 
-      {ocultar &&
-    <div className="imagen" >
-        <h1 className="">{pokemon.name}</h1>
-        <img className='imagenpokemon' src={pokemon.sprites.front_default} alt="pokemon" />
-        </div>
-    }
+  
     </div>
   );
 }
