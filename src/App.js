@@ -6,8 +6,8 @@ import {useNavigate} from 'react-router-dom';
 function App() {
   const navigate = useNavigate();
   const [lista, setLista] = useState([{}]);
-  const [ocultar, setOcultar] = useState(false);
-    const [pokemon, setPokemon] = useState({});
+  const [esconder, setOcultar] = useState(false);
+    const [poke, setPokemon] = useState({});
   useEffect(() => {
     const get = async () => {
       const data = await axios.get("https://pokeapi.co/api/v2/pokemon")
