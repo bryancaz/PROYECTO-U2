@@ -1,0 +1,52 @@
+body {
+    background-color: #ffffff;
+    background-repeat: repeat-x;
+    background-position: 0 0;
+  }
+ 
+  img{
+    width: 125px;
+    
+  }
+  
+  button{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 8px;
+  
+  }
+  .ruta{
+    color: black;
+  }
+  
+  .principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+  }
+  
+  .img2{
+    width: 300px;
+    background: rgb(255, 255, 255);
+    border-radius: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    text-align:center;
+    
+    
+  }
+  
+  .fotoBryan{
+    width: 100px;
+    left: 100px;
+  }
+  .perfil{
+    font-size: large;
+    width: 250px;
+   
+    
+  }
+  
